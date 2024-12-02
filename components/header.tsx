@@ -10,12 +10,12 @@ export const Header: React.FC = async () => {
       <div>
         <a href="/">
           <IconLogo className={cn('w-5 h-5')} />
-          <span className="sr-only">Patooworld</span>
+          <span className="sr-only">morphic</span>
         </a>
       </div>
-      <script async src="https://cse.google.com/cse.js?cx=b25bfdb1d1f084216">
-</script>
-<div class="gcse-search"></div>
+      <div className="flex gap-0.5">
+        <ModeToggle />
+        <HistoryContainer location="header" />
       </div>
     </header>
   )
